@@ -1,4 +1,4 @@
-# a2-avam-cura
+# a2-avam-cura (WIP)
 
 ### Covers :
 
@@ -10,3 +10,13 @@
 * Stylesheets with [SASS](http://sass-lang.com/) (not required, it supports regular css too).
 * Error reported with [TSLint](http://palantir.github.io/tslint/) and [Codelyzer](https://github.com/mgechev/codelyzer).
 * Documentation with [TypeDoc](http://typedoc.org/).
+
+### How to run :
+
+git clone https://github.com/vickykatoch/a2-avam-cura
+
+npm install
+
+npm start
+
+PS: Check the package.json for more commands
