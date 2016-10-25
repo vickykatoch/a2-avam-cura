@@ -91,6 +91,7 @@ module.exports = function makeWebpackConfig() {
       {
         test: /\.ts$/,
         loaders: ['awesome-typescript-loader?' + atlOptions, 'angular2-template-loader', '@angularclass/hmr-loader'],
+        //loaders: ['awesome-typescript-loader', 'angular2-template-loader', '@angularclass/hmr-loader'],
         exclude: [isTest ? /\.(e2e)\.ts$/ : /\.(spec|e2e)\.ts$/, /node_modules\/(?!(ng2-.+))/]
       },
 
@@ -267,7 +268,7 @@ module.exports = function makeWebpackConfig() {
     contentBase: './src/public',
     historyApiFallback: true,
     quiet: true,
-    stats: 'minimal' // none (or false), errors-only, minimal, normal (or true) and verbose
+    stats: 'verbose' // none (or false), errors-only, minimal, normal (or true) and verbose
   };
 
   return config;
