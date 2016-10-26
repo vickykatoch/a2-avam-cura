@@ -8,7 +8,10 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ProductsComponent } from './products/products.component';
+import {BookFeedComponent} from './home/bookfeed.component';
+
 import { routing } from './app.routes';
+import { BooksDataService } from './services/booksdata.service';
 
 import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
 
@@ -22,9 +25,11 @@ import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
   declarations: [
     AppComponent,
     HomeComponent,
+    BookFeedComponent,
     ProductsComponent,
     AboutComponent
   ],
+  providers: [BooksDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
