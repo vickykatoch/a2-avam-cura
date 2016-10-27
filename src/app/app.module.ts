@@ -12,7 +12,7 @@ import {BookFeedComponent} from './home/bookfeed.component';
 
 import { routing } from './app.routes';
 import { BooksDataService } from './services/booksdata.service';
-
+import { NumberToDateConvertPipe } from './common/n2dconverter.pipe';
 import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
 
 @NgModule({
@@ -27,7 +27,8 @@ import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
     HomeComponent,
     BookFeedComponent,
     ProductsComponent,
-    AboutComponent
+    AboutComponent,
+    NumberToDateConvertPipe
   ],
   providers: [BooksDataService],
   bootstrap: [AppComponent]

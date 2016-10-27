@@ -8,4 +8,7 @@ import {IBookFeed} from '../services/feeds';
 export class BookFeedComponent{
       @Input() feed : IBookFeed;
       
+      onFeedClick(feed : IBookFeed) : void {
+            window.open(feed.url,'blank');
+      }
 }

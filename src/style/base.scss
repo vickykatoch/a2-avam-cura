@@ -1,0 +1,12 @@
+.book-feed-card {
+    height:360px;
+}
+@media (max-width: 576px) {
+  .book-feed-card {
+    height:auto;
+  }
+}
+
+.muted-item {
+    font-size: .7em;
+}

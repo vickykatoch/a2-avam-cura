@@ -1,8 +1,11 @@
-<div class="card" >
-  <img class="card-img-top img-fluid" [src]="feed.enclosures[0].url"  alt="Card image cap" >
-  <div class="card-block">
-    <!--<h4 class="card-title">{{feed.title}}</h4>-->
-    <p class="card-text">{{feed.description}}</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
+<div class="card book-feed-card"  (click)='onFeedClick(feed)'>
+	<img class="card-img-top img-fluid" [src]="feed.enclosures[0].url" alt="Card image cap">
+	<div class="card-block">
+		<p class="card-text">
+			{{feed.description ? feed.description : feed.title}}
+		</p>
+		<p class="text-muted muted-item pull-right">
+			<small><i>Published : {{feed.created | n2dFilter}}</i></small>
+		</p>
+	</div>
 </div>
