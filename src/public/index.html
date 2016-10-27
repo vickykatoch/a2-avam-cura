@@ -9,15 +9,27 @@
 	<title>AVAM Cura</title>
 	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE"
 		crossorigin="anonymous">
+	<style>
+		.flash-container {
+			height: 800px;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-align-items: center;
+			align-items: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+		}
+	</style>
 </head>
 
-<body >
+<body>
 	<avam-cura>
-		<div style="padding:30px;">
+		<div class="flash-container">
 			<span>
                   <i class="fa fa-refresh fa-spin fa-5x fa-fw"></i>
             </span>
-			<h1>Loading, Please wait...</h1>
+			<br/>
+			<h3>Loading, Please wait...</h3>
 		</div>
 	</avam-cura>
 </body>
