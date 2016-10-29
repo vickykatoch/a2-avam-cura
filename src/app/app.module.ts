@@ -4,14 +4,14 @@ import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 
 import {TabViewModule} from 'primeng/primeng'; 
-
+import {AgGridModule} from 'ag-grid-ng2/main';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ProductsComponent } from './products/products.component';
 import {BookFeedComponent} from './home/bookfeed.component';
-
+import {SimpleGridComponent} from './products/grid/simplegrid.component';
 import { routing } from './app.routes';
 import { BooksDataService } from './services/booksdata.service';
 import { NumberToDateConvertPipe } from './common/n2dconverter.pipe';
@@ -20,6 +20,7 @@ import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
 @NgModule({
   imports: [
     BrowserModule,
+    AgGridModule.withNg2ComponentSupport(),
     HttpModule,
     FormsModule,
     TabViewModule,
@@ -30,6 +31,7 @@ import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
     HomeComponent,
     BookFeedComponent,
     ProductsComponent,
+    SimpleGridComponent,
     AboutComponent,
     NumberToDateConvertPipe
   ],

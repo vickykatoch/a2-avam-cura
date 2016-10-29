@@ -7,6 +7,9 @@ import '@angular/http';
 import '@angular/router';
 
 import 'primeng/primeng'; //TODO: Do not import the entire library, just import the required modules so that final footprints are smaller
+import 'ag-grid';
+import 'ag-grid-ng2';
+
 
 import 'rxjs';
 import '@angularclass/hmr';
